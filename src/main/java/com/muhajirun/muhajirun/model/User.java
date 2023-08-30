@@ -1,6 +1,7 @@
 package com.muhajirun.muhajirun.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.*;
 
 @Entity
@@ -11,6 +12,8 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class User extends BaseModel{
+    @Id
+    private Long id;
     private String name;
     private String emailAddress;
     private String passWord;
