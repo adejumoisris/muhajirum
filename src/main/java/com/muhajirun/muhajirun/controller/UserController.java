@@ -26,6 +26,7 @@ public class UserController {
         UserResponse userResponse = userService.createAccount(userRequest);
         ApiResponse<UserResponse> apiResponse = new ApiResponse<>();
         apiResponse.setData(userResponse);
+        apiResponse.setHttpHeader(true);
         apiResponse.setStatusCode("00");
         apiResponse.setMessage("created Account Successfully");
 

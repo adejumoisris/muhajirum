@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class ApiResponse <T>{
     private String statusCode;
+    private boolean HttpHeader;
     private String message;
     private T data;
     private final LocalDateTime time = LocalDateTime.now();
